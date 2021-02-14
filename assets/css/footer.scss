@@ -1,0 +1,30 @@
+@import 'variables';
+
+footer {
+  background-color: $footer-bg-color;
+
+  height: 75px;
+
+  position: relative;
+
+  #footer-links {
+    @include center-center;
+    width: 100%;
+    text-align: center;
+
+    a {
+      font-size: 30px;
+      color: #f1faee;
+      text-decoration: none;
+      margin: 0.5rem;
+
+      i {
+        transition: all 0.5s;
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@keyframes popin {
+  from {transform: translate(-50%, -50%) scale(0);}
+  to {transform: translate(-50%, -50%) scale(1);}
+}
+@keyframes popout {
+  from {transform: translate(-50%, -50%) scale(1);}
+  to {transform: translate(-50%, -50%) scale(0);}
+}
+
+@keyframes fadein {
+  from {background-color: none;}
+  to {background-color: rgba(0, 0, 0, 0.5);}
+}
+@keyframes fadeout {
+  from {background-color: rgba(0, 0, 0, 0.5);}
+  to {background-color: none;}
+}
+
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-200px * 4.285))}
+}

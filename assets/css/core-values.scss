@@ -1,0 +1,65 @@
+@import 'variables';
+
+#core-values {
+  background-color: $core-bg-color;
+
+  max-width: 100vw;
+  padding: 1rem;
+  
+  text-align: center;
+
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-rows: 1fr;
+    gap: 1rem;
+    justify-items: center;
+
+    margin: 1rem auto;    
+    width: 800px;
+    max-width: 100%;
+
+    color: $white;
+
+    .card-core {
+      background-color: $red;
+
+      height: 200px;
+      max-height: 30vh;
+      width: 300px;
+      max-width: 100vw;
+
+      padding: 1rem;
+      border-radius: 1rem;
+
+      position: relative;
+
+      //select text
+      &:nth-child(odd) h3 {
+        text-align: left;
+      }
+      &:nth-child(even) h3 {
+        text-align: right;
+      }
+      
+      //select imgs
+      &:nth-child(odd) img {
+        top: -10px;
+        right: -10px;
+      }
+      &:nth-child(even) img {
+        top: -10px;
+        left: -10px;
+      }
+
+      img {
+        max-height: 100px;
+        background-color: $white;
+        padding: 0.5rem;
+        border-radius: 1rem;
+
+        position: absolute;
+      }
+    }
+  }
+}

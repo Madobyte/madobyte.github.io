@@ -1,0 +1,33 @@
+@import 'variables';
+
+#resume {
+  background-color: $resume-bg-color;
+  height: 200px;
+  max-height: 100vh;
+  position: relative;
+  
+  text-align: center;
+  
+  .resume-container {
+    @include center-center;
+
+    width: 100%;
+    padding: 1rem;
+    
+    embed {
+      //display: none;
+      height: 0;
+
+      transition: all 0.5s;
+    }
+
+    .open {
+      //display: block;
+      height: 1000px;
+    }
+
+    button {
+      margin: 0 auto;
+    }
+  }
+}

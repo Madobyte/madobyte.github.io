@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
+@import 'variables';
+@import 'header';
+@import 'introduction';
+@import 'projects';
+@import 'core-values';
+@import 'resume';
+@import 'certificates';
+@import 'tools';
+@import 'footer';
+@import 'modal';
+@import 'animations';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+}
+
+h2 {
+  margin: 1rem;
+  text-align: center;
+}
+
+button {
+  background-color: $white;
+  box-shadow: 5px 5px 0 $red;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  transition: all 0.5s;
+
+  &:hover {
+    background-color: $red;
+    color: $white;
+    box-shadow: 7px 7px 0 $white;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    transform: translate(-2px, -2px);
+  }
+}

@@ -1,0 +1,21 @@
+@import 'variables';
+
+#introduction {
+  
+  height: 100vh;
+  background: url($intro-bg-url);
+  background-color: #f1faee;
+  color: #f1faee;
+  position: relative;
+  
+  text-align: center;
+  
+  @include center-bg-img;
+
+  .bg-text {
+    width: 500px;
+    max-width: 70vw;
+    
+    @include center-center;
+  }
+}

@@ -1,0 +1,35 @@
+$header-bg-color: #f1faee;
+$projects-bg-color: #f1faee;
+$core-bg-color: #a8dadc;
+$resume-bg-color: #457b9d;
+$footer-bg-color: #1d3557;
+
+$intro-bg-url: 'https://images.unsplash.com/photo-1550063873-ab792950096b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80';
+$projects-bg-url: './assets/images/bg-img-01.png';
+$cert-bg-url: './assets/images/bg-img-00.png';
+
+$red: #e63946;
+$white: #f1faee;
+$blue-light: #a8dadc; 
+$blue: #457b9d;
+$blue-dark: #1d3557;
+
+$animationSpeed: 30s;
+
+@mixin center-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin center-bg-img {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+  background-size: cover;
+}
+
+@mixin white-gradient {
+	background: linear-gradient(to right,  rgba(29, 53, 87, 1) 0%,rgba(29, 53, 87, 0) 100%);
+}
