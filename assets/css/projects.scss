@@ -1,14 +1,54 @@
 #projects {
   @include center-bg-img;
-  height: 100vh;
   background: url($projects-bg-url);
   background-repeat: no-repeat;
   background-position: 20% 105%; 
   background-size: 80vmin;
   background-color: $projects-bg-color;
   position: relative;
+  min-height: 100vh;
+  padding: 1rem;
 
-  span {
-    @include center-center;
+  #projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1rem;
+    justify-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    .project-card {
+    background-color: $blue-dark;
+    width: 300px;
+
+    color: $white;
+
+      .img-container {
+        background-color: yellow;
+        height: 300px;
+        width: 300px;
+      }
+
+      .info-container {
+        height: 100px;
+        padding: 0.5rem;
+
+        .technologies {
+          display: flex;
+          flex-wrap: wrap;
+          margin: 0 auto;
+
+          .tech {
+            font-size: 0.8rem;
+            color: black;
+            margin: 0.2rem;
+            padding: 0.3rem;
+            border-radius: 2rem;
+          }
+        }
+      }
+    }
   }
+
+  
 }

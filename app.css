@@ -62,28 +62,57 @@ header nav a:hover {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  height: 100vh;
   background: url("./assets/images/bg-img-01.png");
   background-repeat: no-repeat;
   background-position: 20% 105%;
   background-size: 80vmin;
   background-color: #f1faee;
   position: relative;
+  min-height: 100vh;
+  padding: 1rem;
 }
-#projects span {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+#projects #projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1rem;
+  justify-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+#projects #projects-container .project-card {
+  background-color: #1d3557;
+  width: 300px;
+  color: #f1faee;
+}
+#projects #projects-container .project-card .img-container {
+  background-color: yellow;
+  height: 300px;
+  width: 300px;
+}
+#projects #projects-container .project-card .info-container {
+  height: 100px;
+  padding: 0.5rem;
+}
+#projects #projects-container .project-card .info-container .technologies {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+#projects #projects-container .project-card .info-container .technologies .tech {
+  font-size: 0.8rem;
+  color: black;
+  margin: 0.2rem;
+  padding: 0.3rem;
+  border-radius: 2rem;
 }
 
-#core-values {
+#design {
   background-color: #a8dadc;
   max-width: 100vw;
   padding: 1rem;
   text-align: center;
 }
-#core-values .card-container {
+#design .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   grid-template-rows: 1fr;
@@ -94,31 +123,30 @@ header nav a:hover {
   max-width: 100%;
   color: #f1faee;
 }
-#core-values .card-container .card-core {
+#design .card-container .card-core {
   background-color: #e63946;
   height: 200px;
   max-height: 30vh;
   width: 300px;
   max-width: 100vw;
   padding: 1rem;
-  border-radius: 1rem;
   position: relative;
 }
-#core-values .card-container .card-core:nth-child(odd) h3 {
+#design .card-container .card-core:nth-child(odd) h3 {
   text-align: left;
 }
-#core-values .card-container .card-core:nth-child(even) h3 {
+#design .card-container .card-core:nth-child(even) h3 {
   text-align: right;
 }
-#core-values .card-container .card-core:nth-child(odd) img {
+#design .card-container .card-core:nth-child(odd) img {
   top: -10px;
   right: -10px;
 }
-#core-values .card-container .card-core:nth-child(even) img {
+#design .card-container .card-core:nth-child(even) img {
   top: -10px;
   left: -10px;
 }
-#core-values .card-container .card-core img {
+#design .card-container .card-core img {
   max-height: 100px;
   background-color: #f1faee;
   padding: 0.5rem;
@@ -299,7 +327,7 @@ footer #footer-links a i:hover {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-200px * 4.285));
+    transform: translateX(calc(-200px * 4.3));
   }
 }
 * {
@@ -308,6 +336,10 @@ footer #footer-links a i:hover {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 3rem;
 }
 
 h2 {
