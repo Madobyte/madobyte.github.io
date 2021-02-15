@@ -7,7 +7,9 @@
   position: relative;
   
   text-align: center;
-  
+
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.5);
+
   .resume-container {
     @include center-center;
 

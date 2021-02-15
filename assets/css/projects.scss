@@ -1,9 +1,9 @@
 #projects {
   @include center-bg-img;
-  background: url($projects-bg-url);
+  /* background: url($projects-bg-url);
   background-repeat: no-repeat;
   background-position: 20% 105%; 
-  background-size: 80vmin;
+  background-size: 80vmin; */
   background-color: $projects-bg-color;
   position: relative;
   min-height: 100vh;

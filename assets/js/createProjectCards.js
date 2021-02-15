@@ -17,14 +17,13 @@ export const  createProjectCards = () => {
     card.appendChild(infoContainer);
 
     /* Adds the screenshots as background image */
-
     imgContainer.style.cssText = `
       background: url(${project.imgURL}) no-repeat;
       background-size: 100%;
       background-color: #a8dadc;
     `;
 
-    /* Adds the projec title */
+    /* Adds the project title */
     const projectTitle = document.createElement('h3');
     projectTitle.classList.add('project-title');
     projectTitle.innerText = project.title;
