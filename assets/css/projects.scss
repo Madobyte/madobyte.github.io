@@ -22,9 +22,12 @@
     width: 300px;
 
     color: $white;
-
+    filter: grayscale(0);
+    
+    cursor: pointer;
+    transition: all 0.5s;
+    
       .img-container {
-        background-color: yellow;
         height: 300px;
         width: 300px;
       }
@@ -48,6 +51,23 @@
         }
       }
     }
+      .hover-btns {
+        display: grid;
+        @include center-center;
+
+        .live-demo-btn, .view-github-btn {
+          display: none;
+          margin: 0.5rem;
+          padding: 0.5rem;
+          
+          text-align: center;
+          text-decoration: none;
+
+          background-color: $blue;
+          color: $white;
+          border: 1px solid $white;
+        }
+      }
   }
 
   
