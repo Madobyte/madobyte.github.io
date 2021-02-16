@@ -187,8 +187,9 @@ header nav a:hover {
   border-radius: 3rem;
 }
 #design .card-container .card-core img {
-  max-height: 80px;
   background-color: #f1faee;
+  max-height: 80px;
+  max-width: 80px;
   padding: 0.5rem;
   position: absolute;
   border-radius: 3rem;
