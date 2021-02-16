@@ -56,6 +56,19 @@ header nav a:hover {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+#introduction .engineer {
+  display: flex;
+  justify-content: center;
+}
+#introduction .engineer .text-before {
+  margin-right: 0.5rem;
+}
+#introduction .engineer .text-after {
+  margin-left: 0.5rem;
+}
+#introduction .engineer .typewrite {
+  background-color: #e63946;
+}
 
 #projects {
   background-repeat: no-repeat;

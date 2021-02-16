@@ -18,4 +18,21 @@
     
     @include center-center;
   }
+
+  .engineer {
+    display: flex;
+    justify-content: center;
+
+    .text-before {
+      margin-right: 0.5rem;
+    }
+
+    .text-after {
+      margin-left: 0.5rem;
+    }
+
+    .typewrite {
+      background-color: $red;
+    }
+  }
 }
