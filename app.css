@@ -211,12 +211,8 @@ header nav a:hover {
   width: 100%;
   padding: 1rem;
 }
-#resume .resume-container embed {
-  height: 0;
-  transition: all 0.5s;
-}
-#resume .resume-container .open {
-  height: 1000px;
+#resume .resume-container p {
+  margin: 1rem;
 }
 #resume .resume-container button {
   margin: 0 auto;
@@ -431,6 +427,14 @@ button:hover {
   box-shadow: 7px 7px 0 #f1faee;
   border: 1px solid rgba(255, 255, 255, 0.5);
   transform: translate(-2px, -2px);
+}
+
+a {
+  text-decoration: none;
+  color: #1d3557;
+}
+a:hover {
+  color: #e63946;
 }
 
 /*# sourceMappingURL=app.css.map */

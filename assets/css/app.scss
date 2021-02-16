@@ -45,3 +45,12 @@ button {
     transform: translate(-2px, -2px);
   }
 }
+
+a {
+  text-decoration: none;
+  color: $blue-dark;
+
+  &:hover {
+    color: $red;
+  }
+}
