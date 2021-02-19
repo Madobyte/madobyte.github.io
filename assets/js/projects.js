@@ -1,5 +1,11 @@
 export const projects = [
   {
+    title: 'Restaurant Page',
+    technology: ['html', 'css', 'sass', 'CSS Grid', 'javascript', 'webpack'],
+    projectURL: 'https://madobyte.github.io/restaurant-page/',
+    repoURL: 'https://github.com/Madobyte/restaurant-page',
+    imgURL: './assets/images/restaurant-page.png'
+  },{
     title: 'Library App',
     technology: ['html', 'css', 'sass', 'CSS Grid', 'javascript', 'localStorage', 'CRUD'],
     projectURL: 'https://madobyte.github.io/library-app/',
