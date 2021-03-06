@@ -2,7 +2,7 @@ export const projects = [
   {
     title: "Sibi - A CV Generator",
     technology: ["in Developement", "ReactJS", "Material UI"],
-    projectURL: "https://madobyte.github.io/sibi/",
+    projectURL: "https://optimistic-archimedes-5cfe51.netlify.app/",
     repoURL: "https://github.com/Madobyte/sibi",
     imgURL: "./assets/images/sibi-app.png",
   },
