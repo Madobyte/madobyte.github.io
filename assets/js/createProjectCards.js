@@ -43,12 +43,8 @@ export const createProjectCards = () => {
           `;
           break;
         case "css":
-          techContainer.style.cssText = `
-            background-color: #264de4;
-            color: #f1faee;
-          `;
-          break;
         case "CSS Grid":
+        case "Flexbox":
           techContainer.style.cssText = `
             background-color: #264de4;
             color: #f1faee;
@@ -75,7 +71,12 @@ export const createProjectCards = () => {
         case "webpack":
           techContainer.style.cssText = `background-color: #1C78C0`;
           break;
-
+        case "Material UI":
+          techContainer.style.cssText = `background-color: #2196F3`;
+          break;
+        case "in Developement":
+          techContainer.style.cssText = `background-color: #FFCC00`;
+          break;
         default:
           techContainer.style.cssText = `background-color: #a8dadc`;
           break;
