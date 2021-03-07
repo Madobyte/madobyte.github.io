@@ -78,6 +78,13 @@ export const projects = [
     imgURL: "./assets/images/bayani-quote-generator.png",
   },
   {
+    title: "Unit Testing with Jest",
+    technology: ["jest", "babel"],
+    projectURL: "",
+    repoURL: "https://github.com/Madobyte/jest-unit-testing",
+    imgURL: "./assets/images/logo-jest.png",
+  },
+  {
     title: "Caesar Cipher using Ruby",
     technology: ["ruby"],
     projectURL: "",

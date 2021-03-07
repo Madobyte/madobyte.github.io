@@ -65,8 +65,7 @@ export const createProjectCards = () => {
         case "ruby":
           techContainer.style.cssText = `
             background-color: #cc0000;
-            color: #f1faee;
-          `;
+            color: #f1faee;`;
           break;
         case "webpack":
           techContainer.style.cssText = `background-color: #1C78C0`;
@@ -76,6 +75,14 @@ export const createProjectCards = () => {
           break;
         case "in Developement":
           techContainer.style.cssText = `background-color: #FFCC00`;
+          break;
+        case "jest":
+          techContainer.style.cssText = `
+            background-color: #C63D14;
+            color: #f1faee;`;
+          break;
+        case "babel":
+          techContainer.style.cssText = `background-color: #F3DF38`;
           break;
         default:
           techContainer.style.cssText = `background-color: #a8dadc`;
